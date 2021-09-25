@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Imtihon Maketi</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h3 class="main-title text-center my-5">Pitsa buyurtma qilish</h3>
+      <div class="row">
+        <div class="col-md-9">
+          <form class="main-form" action="https://echo.htmlacademy.ru" id="form-id" method="POST" name="formid">
+            <fieldset class="main-fieldset">
+              <legend>Noni qanday bo'lsin</legend>
+              <div class="js-main-warapper">
+                <label>
+                  <select class="js-topponing-checkbox" id="topping-checkboxe" type="checkbox" name="ddselect" onchange="getddl()" required>
+                  <option></option>
+                  <option>Yupqa</option>
+                  <option>Qalin</option>
+                  <option>O'rtacha</option>
+                  <option>Yumoloq</option>
+                  <option>To'rtburchak</option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="main-fieldset">
+              <legend>Kattaligi</legend>
+              <div class="js-main-warapper">
+                <labelc>
+                  <input type="checkbox" value="25s" class="checkbox2" id="25s">
+                  <label for="25s">25s</label>
+                </label>
+                <label>
+                  <input type="checkbox" value="30s" class="checkbox2" id="30s">
+                  <label for="30s">30s</label>
+                </label>
+                <label>
+                  <input type="checkbox" value="35s" class="checkbox2" id="35s">
+                  <label for="35s">35s</label>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="main-fieldset">
+              <legend>Ustiga nima solaylik?</legend>
+              <div class="js-main-warapper1">
+                <div class="box">
+                  <input type="checkbox" value="Pamidor" class="checkbox" id="Pamidor">
+                  <label for="Pamidor">Pamidor</label>
+                  <input type="checkbox" value="Qo'ziqorin" class="checkbox" id="Qo'ziqorin">
+                  <label for="Qo'ziqorin">Qo'ziqorin</label>
+                </div>
+                <div class="box">
+                  <input type="checkbox" value="Bodiring" class="checkbox" id="Bodiring">
+                  <label for="Bodiring">Bodiring</label>
+                  <input type="checkbox" value="Qiyma" class="checkbox" id="Qiyma">
+                  <label for="Qiyma">Qiyma</label>
+                </div>
+                <div class="box">
+                  <input type="checkbox" value="Rayhonli" class="checkbox" id="Rayhonli">
+                  <label for="Rayhonli">Rayhonli</label>
+                  <input type="checkbox" value="Ko'katli" class="checkbox" id="Ko'katli">
+                  <label for="Ko'katli">Ko'katli</label>
+                </div>
+                <div class="box">
+                  <input type="checkbox" value="Kalbasa" class="checkbox" id="Kalbasa">
+                  <label for="Kalbasa">Kalbasa</label>
+                  <input type="checkbox" value="Sassiskali" class="checkbox" id="Sassiskali">
+                  <label for="Sassiskali">Sassiskali</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="main-fieldset">
+              <legend>Qo'shimchalar?</legend>
+              <div class="js-main-warapper2">
+                <div class="box">
+                  <input type="checkbox" value="Kechup" class="checkbox1" id="Kechup">
+                  <label for="Kechup">Kechup</label>
+                  <input type="checkbox" value="Mayanez" class="checkbox1" id="Mayanez">
+                  <label for="Mayanez">Mayanez</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-md-3 order-state">
+          <div>
+            <h3 class="h5">Non:</h3>
+            <label for="" id="lbmess"></label>
+            <p class="js-order-bread"></p>
+          </div>
+          
+          <div>
+            <h3 class="h5">Kattalik:</h3>
+            <div class="print-values">
+              <p class="p" id="valueList2"></p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="h5">Usitida:</h3>
+            <div class="print-values">
+              <p class="p" id="valueList"></p>
+            </div>
+          </div>
+          
+          
+          <div>
+            <h3 class="h5">Qo'shimchalari:</h3>
+            <div class="print-values1">
+              <p class="p" id="valueList1"></p>
+            </div>
+          </div> 
+          
+          <button class="test-buttun" type="submit" form="form-id">buyurtma berish</button>
+          
+        </div>
+      </div>
+      <div class="wrapper-output">
+        <output class="output"></output>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="javascript/javascript.js"></script>
+</body>
+</html>
